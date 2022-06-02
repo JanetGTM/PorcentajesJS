@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-descuentos.css">
     <title>Porcentajes y descuento | Curso práctico de javascript</title>
 </head>
 <body>
@@ -11,13 +13,36 @@
         <h1>Porcentajes y descuentos</h1>
         <p>Este es el segundo taller de javascript</p>
     </header>
-
     <main>
-        <section>
-            <h2>Calcula el precio a pagar de tus productos con descuento
-            </h2>
+        <section class="container">     
+        <form action="">
+                <h2>Calcula el precio a pagar de tus productos con descuento </h2>
+                <span>
+                    <label for="InputPrice">Precio del producto</label>
+                    <input type="number" name="" id="inputPrice">
+                </span>
+                <span>
+                    <label for="InputDiscount">Descuento del producto</label>
+                    <input type="number" id="inputDiscount">
+                </span>  
+            </form>
+            <section class="results">
+                <div class="resultSaving">
+                    <p>Ahorro:</p>
+                    <p><span id="saving">$</span></p>
+                </div>
+                <div class="resultDiscount">
+                    <p>Pago final:</p>
+                   <p><span id="result">$</span></p>
+                </div>
+            </section>
         </section>
     </main>
+    <footer>
+        <div>
+            <p>© 2022 | Janet Torres.  Todos los derechos reservados. Segundo taller del curso Práctico de JavaScript. By Platzi <span class="footerHeart">♥</span></p>
+        </div>
+    </footer>
 <script src="./descuentos.js"></script>
 </body>
 </html>
