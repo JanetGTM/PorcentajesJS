@@ -16,24 +16,31 @@
     <main>
         <section class="container">     
         <form action="">
-                <h2>Calcula el precio a pagar de tus productos con descuento </h2>
-                <span>
+                <h2>Calcula el precio a pagar en tus productos con descuento</h2>
+                <span class="containerOption firstSpan">
                     <label for="InputPrice">Precio del producto</label>
-                    <input type="number" name="" id="inputPrice">
+                    <span  class="inputContainer">
+                        <span class="simbol">$</span>
+                        <input type="number" name="" id="inputPrice">
+                    </span>
                 </span>
-                <span>
+                <span class="containerOption">
                     <label for="InputDiscount">Descuento del producto</label>
-                    <input type="number" id="inputDiscount">
+                    <span class="inputContainer">
+                        <input type="number" id="inputDiscount">
+                        <span class="simbol">%</span>
+                    </span>
+                    <p class="discountAlert" id="discountAlert"></p>
                 </span>  
             </form>
             <section class="results">
                 <div class="resultSaving">
                     <p>Ahorro:</p>
-                    <p><span id="saving">$</span></p>
+                    <p><span id="saving">$0</span></p>
                 </div>
                 <div class="resultDiscount">
                     <p>Pago final:</p>
-                   <p><span id="result">$</span></p>
+                   <p><span id="result">$0</span></p>
                 </div>
             </section>
         </section>
